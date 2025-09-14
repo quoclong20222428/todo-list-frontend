@@ -6,7 +6,7 @@ export const Header = () => {
   return (
     <div className="relative flex items-center justify-center px-4 py-2">
       <div className="text-center">
-        <h1 className="text-4xl font-bold text-transparent bg-primary bg-clip-text">
+        <h1 className="text-4xl font-bold text-transparent bg-primary bg-clip-text leading-relaxed">
           {user
             ? `What’s up, ${user.firstName || user.fullName || user.username}!`
             : "Welcome"}
