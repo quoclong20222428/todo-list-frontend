@@ -1,4 +1,4 @@
-# To-Do App – Preliminary Assignment Submission
+# To-Do App – FullStack Project
 
 ## 🚀 Project Setup & Usage
 **How to install and run your project:**  
@@ -12,7 +12,7 @@
 - Run frontend: `npm run dev`  
 - Access the application at `http://localhost:5173`
 
-## 🔗 Deployed Web URL or APK file
+## 🔗 Deployed Web URL
 [https://todo-list-frontend-iota-eight.vercel.app/](https://todo-list-frontend-iota-eight.vercel.app/)
 
 
