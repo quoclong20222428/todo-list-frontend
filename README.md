@@ -20,7 +20,7 @@ This project is a To-Do List web application designed to streamline task managem
 For authentication, the app integrates **Clerk**, allowing secure signup, login, logout, and user profile management. On the frontend, **Tailwind CSS** provides a clean and responsive UI design.
 
 
-![Main Screen Preview](./src/img/img1.png)
+![Main Screen Preview](./src/assets/img1.png)
 
 ### Key Features
 - **Authentication**: Register, log in, log out, and update profiles using Clerk.
