@@ -2,6 +2,15 @@
 
 This folder contains the React/Vite client for the To-Do App. It provides a Clerk-authenticated interface where users can create, manage, and track tasks while visualising real-time statistics fetched from the backend (`../todo-list-backend`).
 
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=flat-square)
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white&style=flat-square)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white&style=flat-square)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white&style=flat-square)
+![Radix UI](https://img.shields.io/badge/Radix_UI-161618?logo=radix-ui&logoColor=white&style=flat-square)
+![Clerk](https://img.shields.io/badge/Clerk-6B33A8?logo=clerk&logoColor=white&style=flat-square)
+![Axios](https://img.shields.io/badge/Axios-5A29E4?logo=axios&logoColor=white&style=flat-square)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?logo=react-router&logoColor=white&style=flat-square)
+
 ![Main Screen Preview](./src/assets/mainscreen.png)
 
 ## Table of contents
