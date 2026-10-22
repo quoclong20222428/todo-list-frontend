@@ -1,5 +1,5 @@
 import AuthLayout from "@/components/AuthLayout";
-import { SignIn } from "@clerk/clerk-react";
+import { SignIn } from "@clerk/react";
 
 export default function SignInPage() {
   return (

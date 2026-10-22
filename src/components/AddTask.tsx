@@ -5,7 +5,7 @@ import { toast } from "sonner";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
 import { Input } from "./ui/input";
-import { useAuth } from "@clerk/clerk-react";
+import { useAuth } from "@clerk/react";
 
 const AddTask = ({ handleNewTaskAdded }: any) => {
   const { getToken } = useAuth();

@@ -1,11 +1,6 @@
 import { api } from "@/api/api";
 import { visibleTaskLimit, type FilterTypes, type Task } from "@/lib/data";
-import {
-  RedirectToSignIn,
-  SignedIn,
-  SignedOut,
-  useAuth,
-} from "@clerk/react-router";
+import { RedirectToSignIn, Show, useAuth } from "@clerk/react-router";
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
 import AddTask from "../components/AddTask";
@@ -68,7 +63,7 @@ function Home() {
 
   const visibleTasks = filteredTasks.slice(
     (page - 1) * visibleTaskLimit,
-    page * visibleTaskLimit
+    page * visibleTaskLimit,
   );
 
   const totalPages = Math.ceil(filteredTasks.length / visibleTaskLimit);
@@ -99,7 +94,7 @@ function Home() {
 
   return (
     <>
-      <SignedIn>
+      <Show when="signed-in">
         <div className="min-h-screen w-full relative">
           {/* Radial Gradient Background from Top */}
           <div
@@ -153,11 +148,11 @@ function Home() {
             </div>
           </div>
         </div>
-      </SignedIn>
+      </Show>
 
-      <SignedOut>
+      <Show when="signed-out">
         <RedirectToSignIn />
-      </SignedOut>
+      </Show>
     </>
   );
 }
