@@ -8,6 +8,7 @@ import {
   PaginationPrevious,
 } from "@/components/ui/pagination";
 import { cn } from "@/lib/utils";
+import { generatePages } from "@/lib/paginationUtils";
 
 interface TaskListPaginationProps {
   handleNextPage: () => void;
@@ -24,27 +25,8 @@ const TaskListPagination = ({
   totalPages,
   handlePageChange,
 }: TaskListPaginationProps) => {
-  const generatePages = () => {
-    const pages: (number | string)[] = [];
 
-    if (totalPages < 4) {
-      for (let i = 1; i <= totalPages; i++) {
-        pages.push(i);
-      }
-    } else {
-      if (page <= 2) {
-        pages.push(1, 2, 3, "...", totalPages);
-      } else if (page > totalPages - 1) {
-        pages.push(1, "...", totalPages - 2, totalPages - 1, totalPages);
-      } else {
-        pages.push(1, "...", page, "...", totalPages);
-      }
-    }
-
-    return pages;
-  };
-
-  const pagesToShow = generatePages();
+  const pagesToShow = generatePages(page, totalPages);
 
   return (
     <div className="flex justify-center mt-4 ">
